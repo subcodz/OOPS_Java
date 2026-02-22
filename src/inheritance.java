@@ -1,9 +1,11 @@
-//inheritance: to inherit properties and behaviors from a parent class to a child class
-//parent class: superclass, child class: subclass
-//inheritance promotes code reusability and establishes a natural hierarchical relationship between classes
+/*
+inheritance: to inherit properties and behaviors from a parent class to a child class
+parent class: superclass, child class: subclass
+inheritance promotes code reusability and establishes a natural hierarchical relationship between classes
 
-//three types of inheritance: single, multilevel, hierarchical
+three types of inheritance: single, multilevel, hierarchical
 
+*/
 
 class Animal {
     String name;

@@ -1,11 +1,13 @@
-//Encapsulation is the principle of restricting direct access to an object's state and
-//controlling state changes through well-defined behavior.
+/*
+Encapsulation is the design principle of restricting direct access to an object's state and controlling state changes through well-defined behavior.
 
-// In Java, it is achieved primarily using access modifiers.
+In Java, it is achieved primarily using access modifiers.
 
-//its not about visibility or hiding the data but it is limiting or controlling the access to the data.
+its not about visibility or hiding the data but it is limiting or controlling the access to the data.
 
-//No one can arbitrarily assign state; they can only trigger controlled behavior that modifies state under defined rules.
+No one can arbitrarily assign state; they can only trigger controlled behavior that modifies state under defined rules.
+*/
+
 
 class BankAccount {
 
@@ -25,5 +27,14 @@ class BankAccount {
 
     public double getBalance() {               //public method to access the private variable balance
         return balance;
+    }
+}
+
+public class encapsulation {
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount();
+        account.deposit(1000);
+        account.withdraw(500);
+        System.out.println("Current balance: " + account.getBalance());
     }
 }
